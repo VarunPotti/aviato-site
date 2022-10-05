@@ -4,7 +4,7 @@ import { useAtom } from "jotai";
 const Companies = () => {
   const [companies, setCompanies] = useAtom(companiesAtom);
   return (
-    <div className="flex flex-col w-1/4 gap-[20px] overflow-y-auto py-4">
+    <div className="flex flex-col w-1/4 gap-[20px] overflow-y-auto py-4 select-none">
       {companies.map((company) => (
         <div className="flex gap-3 items-center justify-start h-12 rounded-full w-full">
           <img
