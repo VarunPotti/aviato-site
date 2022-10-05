@@ -1,9 +1,12 @@
 import { useState } from "react";
+import Navbar from "./components/navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="w-screen h-screen bg-black"></div>;
+  return (
+    <div className="w-screen h-screen overflow-hidden font-montserrat">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
